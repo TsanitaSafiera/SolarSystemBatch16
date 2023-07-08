@@ -1,0 +1,75 @@
+*steps to clone a repository:
+
+1.create a folder
+2.goto github , under the code , select HTTPS, copy the link
+3.Open the terminal navigate it to the folder
+4.git clone URL
+
+
+done
+
+Open the project in intellij:
+file-->open-->projectlocation-->this window/newwindow
+
+NOTE:
+working with the repo that u cloned
+make sure that ur terminal is actually there , because when u clone it is going to be one step back
+
+
+
+
+
+Git fetch:
+check for updates
+if no updates--> blank output
+if updates ---> mentions the branch in which there is an update
+
+
+git pull:
+dowenalods the updates in the branch in which u are right now
+
+
+---------------------------------------------------------------------------
+How to create a branch?if u need to work on an existing project
+1.Clone
+2.before even starting to work on the project , create a branch
+      --git branch branchName
+      --git checkout branchName
+
+write ur code
+commit it on the same branch
+push it to the remote (git push -u origin branchName)
+
+
+review and merge
+click on the pullreuqest tab
+Open a new Pull request
+select base --> main  compare--> branch_u_want_to_merge
+put in message
+create pull request
+
+
+
+as being team lead if u want to review the code and merge it:
+
+1.clone
+2.by default the branch is only going to be main, so u do
+            --git branch -a --> to list all the available branches
+            --git checkout branchName--> downalod the branch that u want to
+
+review the code
+4.merge---> git checkout main (siwtch to the branch u want to merge)
+            git merge branchName (the branch which u wan to merge)
+
+update remote --> git push
+
+
+
+how as being a team memeber after having the merged main, get ur local main updated too?
+
+switch to main branch on ur local
+git fetch
+git pull
+
+
+------------------------------------------------------------------------------------------------------------------
